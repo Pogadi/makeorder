@@ -15,25 +15,18 @@ import {Auth} from '../providers/auth';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Page1;
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any}>;
 
   constructor(public auth: Auth, public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
-    this.auth.login().then((isLoggedIn)=>{
-      if(isLoggedIn){
-        this.rootPage = Page1
-      } else {
-        this.rootPage = LoginPage;
-      }
-    });
+    
 
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Page One', component: Page1 },
       { title: 'Page Two', component: Page2 },
-      { title: 'Pogy sa moze hrajkat', component: LoginPage }
     ];
 
   }
