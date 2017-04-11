@@ -9,8 +9,13 @@
 
 <ion-content class="background1" padding>
   <ion-list >
-<ion-item class="items" text-wrap *ngFor="let item of newsData" >
-<p >{{item.name}}</p><p class="price">{{item.price}}</p>
+<ion-item class="items" text-wrap *ngFor="let item of productData" >
+<p >{{item.name}}</p><p class="price">{{item.price}}
+<ion-item>
+    <ion-input type="number" placeholder="0" name="{{item.id}}" id="{{item.id}}" [(ngModel)]="shoppingCart.count"></ion-input>
+  </ion-item>
+<button ion-button (click)="add(item.id)">Add to Cart</button></p>
 </ion-item>
 </ion-list>
+
 </ion-content>
