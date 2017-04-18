@@ -8,6 +8,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {LoginPage} from '../pages/login/login';
 import {Auth} from '../providers/auth';
 import {HttpProvider} from '../providers/http-provider';
+import {BarcodeScanner} from '@ionic-native/barcode-scanner';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import {HttpProvider} from '../providers/http-provider';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}, 
     Auth,
+    BarcodeScanner
   ]
 })
 export class AppModule {}
