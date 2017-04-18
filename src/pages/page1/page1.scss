@@ -1,7 +1,33 @@
 
+.amount{
+	all: unset;
+	width: 41px;
+	float: left;
+	text-align: center;
+	background-color: color($colors, light, base);
+}
+
+button{
+	all: unset;
+	font-size: 20px !important;
+    height: 33px !important;}
+
+.items{
+	background-color: color($colors, opacity, base);
+
+}
+
+
+input{
+	all: unset;
+	margin-left: 25% !important;
+}
 
 p.price {
-	width: 100%;
+    width: 76%;
+	padding-top: 3.5%;
+	padding-right: 10px;
+
 	float: left;
 	text-align: right;
 	font-size: 16px;
@@ -13,11 +39,12 @@ p.price {
 
 }
 
-.items{
-	background-color: color($colors, opacity, base);
-
-}
-
 p{
 	color: color($colors, dark, base) !important;
+}
+
+#spin:hover {
+	color: black;
+	width: 200px;
+
 }
