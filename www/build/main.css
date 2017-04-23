@@ -29427,8 +29427,33 @@ a {
   color: #f4f4f4;
 }
 
+.amount {
+  all: unset;
+  width: 41px;
+  float: left;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+button {
+  all: unset;
+  font-size: 20px !important;
+  height: 33px !important;
+}
+
+.items {
+  background-color: rgba(234, 234, 234, 0.78);
+}
+
+input {
+  all: unset;
+  margin-left: 25% !important;
+}
+
 p.price {
-  width: 100%;
+  width: 69%;
+  padding-top: 3.5%;
+  padding-right: 10px;
   float: left;
   text-align: right;
   font-size: 16px;
@@ -29438,10 +29463,11 @@ p.price {
   content: " €";
 }
 
-.items {
-  background-color: rgba(234, 234, 234, 0.78);
-}
-
 p {
   color: #222 !important;
+}
+
+#spin:hover {
+  color: black;
+  width: 200px;
 }

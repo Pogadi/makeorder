@@ -8,8 +8,8 @@
 </ion-header>
 
 <ion-content>
-  <div ngIf="results">
-    <p>{{results.text}}</p>
+  <div *ngIf="results">
+    <p>Output: {{results.text}}</p>
     <p>{{results.format}}</p>
     <p>{{results.cancelled}}</p>
   </div>

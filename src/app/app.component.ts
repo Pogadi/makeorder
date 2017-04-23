@@ -15,8 +15,8 @@ import {HttpProvider} from '../providers/http-provider';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  //rootPage: any = LoginPage;
-  rootPage: any = Page1;
+  rootPage: any = LoginPage;
+  //rootPage: any = Page1;
 
   pages: Array<{title: string, component: any}>;
 

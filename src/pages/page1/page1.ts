@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { NavController, LoadingController } from 'ionic-angular';
 import {HttpProvider} from '../../providers/http-provider';
-import 'rxjs/add/operator/map';
+
 import {Http} from "@angular/http";
+import {Page2} from '../page2/page2';
 
 @Component({
   selector: 'page-page1',
   templateUrl: 'page1.html',
-  providers: [HttpProvider]
+  providers: [HttpProvider,]
 
 })
 export class Page1 {
@@ -44,7 +45,7 @@ export class Page1 {
   }
   add(itemID){
     let id_customer = 4;
-    let id_table = 1;
+    let id_table = 2;
     let id = itemID;
     let count = this.shoppingCart.count;
     let food: { id: number, quantity: number }[] = [
